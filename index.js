@@ -131,7 +131,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval=clearInterval;
+  gameInterval=clearInterval();
   ROCKS.splice(0,ROCKS.length);
   alert("YOU LOSE!");
 }
