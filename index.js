@@ -132,7 +132,7 @@ function createRock(x) {
  */
 function endGame() {
   gameInterval=null;
-  ROCKS=[];
+  ROCKS.splice(0,ROCKS.length);
   alert("YOU LOSE!");
 }
 
