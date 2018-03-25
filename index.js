@@ -165,14 +165,14 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var ledge = positionToInteger(DODGER.style.left);
-   function step(){
+   function stepl(){
      DODGER.style.left=`${ledge-=4}px`;
 
      if(ledge>0){
-       window.requestAnimationFrame(step);
+       window.requestAnimationFrame(stepl);
      }
    }
-   window.requestAnimationFrame(step);
+   window.requestAnimationFrame(stepl);
 
 }
 
@@ -183,14 +183,14 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var redge = positionToInteger(DODGER.style.left)+40;
-   function step(){
+   function stepR(){
      DODGER.style.left=`${(redge+=4)-40}px`;
 
      if(redge<400){
-       window.requestAnimationFrame(step);
+       window.requestAnimationFrame(stepR);
      }
    }
-   window.requestAnimationFrame(step);
+   window.requestAnimationFrame(stepR);
 
 }
 
