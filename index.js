@@ -131,7 +131,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  window.clearInterval(gameInterval);
+  clearInterval(gameInterval);
   window.removeEventListener('keydown',moveDodger);
   for(var r=0; r<ROCKS.length; r++){
     ROCKS[r].remove();
@@ -168,8 +168,6 @@ function moveDodgerLeft() {
    var ledge = positionToInteger(DODGER.style.left);
    function stepl(){
      DODGER.style.left=`${ledge-=4}px`;
-     console.log(ledge);
-
    }
    if(ledge>0){
      window.requestAnimationFrame(stepl);
