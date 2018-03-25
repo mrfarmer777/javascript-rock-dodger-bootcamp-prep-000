@@ -169,7 +169,7 @@ function moveDodgerLeft() {
    function stepl(){
      DODGER.style.left=`${ledge-=4}px`;
      console.log(ledge);
-
+     
    }
    if(ledge>0){
      window.requestAnimationFrame(stepl);
@@ -184,9 +184,13 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var ledge = positionToInteger(DODGER.style.left);
-   DODGER.style.left=`${ledge+=4}px`;
+   function stepR(){
+     DODGER.style.left=`${ledge+=4}px`;
+     
+     
+   }
    if(ledge<360){
-     window.requestAnimationFrame(moveDodgerRight);
+     window.requestAnimationFrame(stepR);
    }
 }
 
