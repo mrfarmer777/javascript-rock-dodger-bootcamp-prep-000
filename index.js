@@ -52,7 +52,7 @@ function checkCollision(rock) {
                ) {
       return true
     }
-    
+
   }
   return false
 };
@@ -150,7 +150,7 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
 
-   if([LEFT_ARROW,RIGHT_ARROW]>-1){
+   if([LEFT_ARROW,RIGHT_ARROW].indexOf(e.which)>-1){
      e.preventDefault();
      e.stopPropagation();
    }
