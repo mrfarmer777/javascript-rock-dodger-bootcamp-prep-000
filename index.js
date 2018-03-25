@@ -167,7 +167,7 @@ function moveDodgerLeft() {
    function step(){
      DODGER.style.left=`${ledge-=4}px`;
 
-     if(ledge>3){
+     if(ledge>4){
        window.requestAnimationFrame(step);
      }
    }
