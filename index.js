@@ -153,7 +153,7 @@ function moveDodger(e) {
    if(e.whic===RIGHT_ARROW){
      moveDodgerRight();
    }
-   
+
 }
 
 function moveDodgerLeft() {
@@ -171,7 +171,7 @@ function moveDodgerLeft() {
      }
    }
    window.requestAnimationFrame(step);
-   
+
 }
 
 function moveDodgerRight() {
@@ -189,7 +189,7 @@ function moveDodgerRight() {
      }
    }
    window.requestAnimationFrame(step);
-   
+
 }
 
 /**
