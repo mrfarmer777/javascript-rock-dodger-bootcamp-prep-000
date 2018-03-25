@@ -183,7 +183,7 @@ function moveDodgerRight() {
    */
    var redge = positionToInteger(DODGER.style.left)+40;
    function step(){
-     DODGER.style.left=`${redge+=4}px`;
+     DODGER.style.left=`${(redge+=4)-40}px`;
 
      if(redge<397){
        window.requestAnimationFrame(step);
