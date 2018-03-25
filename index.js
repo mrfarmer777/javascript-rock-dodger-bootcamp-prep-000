@@ -132,7 +132,9 @@ function createRock(x) {
  */
 function endGame() {
   window.clearInterval();
-  $('.rock').remove();
+  for(var r=0; r<ROCKS.length; r++){
+    ROCKS[r].remove;
+  };
   alert("YOU LOSE!");
 }
 
