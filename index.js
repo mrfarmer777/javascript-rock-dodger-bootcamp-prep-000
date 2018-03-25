@@ -131,7 +131,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  window.clearInterval();
+  gameInterval = gameInterval.clearInterval();
   for(var r=0; r<ROCKS.length; r++){
     ROCKS[r].remove;
   };
