@@ -132,6 +132,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
+  window.removeEventListener('keydown');
   for(var r=0; r<ROCKS.length; r++){
     ROCKS[r].remove();
   };
