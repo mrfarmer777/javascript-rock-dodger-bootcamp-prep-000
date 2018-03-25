@@ -166,7 +166,7 @@ function moveDodgerLeft() {
    function step(){
      DODGER.style.left=`${ledge-=4}px`;
 
-     if(ledge<360){
+     if(ledge>0){
        window.requestAnimationFrame(step);
      }
    }
@@ -184,7 +184,7 @@ function moveDodgerRight() {
    function step(){
      DODGER.style.left=`${redge+=4}px`;
 
-     if(redge>40){
+     if(redge<400){
        window.requestAnimationFrame(step);
      }
    }
