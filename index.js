@@ -151,7 +151,7 @@ function moveDodger(e) {
    if(e.which===LEFT_ARROW){
      moveDodgerLeft();
    }
-   if(e.whic===RIGHT_ARROW){
+   if(e.which===RIGHT_ARROW){
      moveDodgerRight();
    }
 
@@ -167,7 +167,7 @@ function moveDodgerLeft() {
    function step(){
      DODGER.style.left=`${ledge-=4}px`;
 
-     if(ledge>0){
+     if(ledge>3){
        window.requestAnimationFrame(step);
      }
    }
@@ -185,7 +185,7 @@ function moveDodgerRight() {
    function step(){
      DODGER.style.left=`${redge+=4}px`;
 
-     if(redge<400){
+     if(redge<397){
        window.requestAnimationFrame(step);
      }
    }
