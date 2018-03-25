@@ -173,7 +173,9 @@ function moveDodgerLeft() {
        window.requestAnimationFrame(stepl);
      }
    }
-   window.requestAnimationFrame(stepl);
+   if(ledge>0){
+     window.requestAnimationFrame(stepl);
+   }
 
 }
 
@@ -191,8 +193,9 @@ function moveDodgerRight() {
        window.requestAnimationFrame(stepR);
      }
    }
-   window.requestAnimationFrame(stepR);
-
+   if(ledge<360){
+     window.requestAnimationFrame(stepR);
+   }
 }
 
 /**
