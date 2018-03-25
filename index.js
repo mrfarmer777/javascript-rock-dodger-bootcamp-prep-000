@@ -136,6 +136,7 @@ function endGame() {
   for(var r=0; r<ROCKS.length; r++){
     ROCKS[r].remove();
   };
+  ROCKS.length=0;
   alert("YOU LOSE!");
 }
 
