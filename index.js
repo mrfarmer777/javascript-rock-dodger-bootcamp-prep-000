@@ -86,7 +86,7 @@ function createRock(x) {
      * we should call endGame()
      */
      function step(){
-       rock.style.top=`${top+=2}px`;
+       
        var coll = checkCollision(rock);
      //console.log(coll);
       if(coll){
@@ -96,7 +96,7 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-
+      rock.style.top=`${top+=2}px`;
 
       if(top<400){
         window.requestAnimationFrame(step);
@@ -111,11 +111,11 @@ function createRock(x) {
        rock.remove();
      }
    }
-   window.requestAnimationFrame(step);
+   
   }
 
   // We should kick of the animation of the rock around here
-  moveRock();
+  window.requestAnimationFrame(step);
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock);
